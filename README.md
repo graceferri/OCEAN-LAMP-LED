@@ -210,8 +210,7 @@ footer {
   <h2>About Me</h2>
   <p>
     <!-- ✏️ EDIT THIS SECTION WITH YOUR DETAILS -->
-    Write about yourself here. Your skills, experience, education,
-    achievements, and anything you want visitors to know.
+    Grace and Ekin are two  MYP/IB highschoolers girls that wanted to create a fun object to use in evryday life no matter in what situation you are in. That's why they created this Ocean Lamp with LED lights in it. Grace and Ekin thanks to this lamp, discovered also their passion for the ocean and for water animals. This lamp is made of recycled plastic which helps the world, not only it's recycled but also it gives your room a cozy vibe. 
   </p>
 </section>
 
@@ -246,8 +245,7 @@ footer {
   <h2>Contact</h2>
   <p>
     <!-- ✏️ EDIT WITH YOUR CONTACT INFO -->
-    Email: yourname@email.com <br>
-    LinkedIn: yourprofile <br>
+    Email: graceelisabethf@gmail.com & ekinilgaz11@gmail.com
     GitHub: yourgithub
   </p>
 </section>
