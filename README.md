@@ -1,9 +1,8 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OceanGlow LED Lamp</title>
+<title>OceanGlow Lamp</title>
 
 <!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
@@ -129,13 +128,13 @@
 
 <header>
     <h1>OceanGlow LED Lamp</h1>
-    <p>Bring the calm beauty of the ocean into your space with a handcrafted LED ocean lamp designed to relax and inspire.</p>
+    <p>It bring the calm beauty of the ocean into your space with a handcrafted LED ocean lamp designed to relax and inspire. You can use it in everyday life in any occasion that you are in. Wanna go to an Aquerium?? No problem buy the OceanGlow Lamp with Led lights and it will look like you are in an actaul aquerium.</p>
     <button class="btn" onclick="document.getElementById('about').scrollIntoView()">Discover More</button>
 </header>
 
 <section id="about">
     <h2>About The Lamp</h2>
-    <p>The OceanGlow LED Lamp recreates the peaceful waves of the ocean using layered resin art and soft LED lighting technology. Perfect for bedrooms, offices, and relaxation spaces.</p>
+    <p>The OceanGlow LED Lamp recreates the peaceful waves of the ocean using layered resin art and soft LED lighting technology. Perfect for bedrooms, offices, and relaxation spaces. It is also made with recycled plastic for helping the animals that live in the oceans, and that won't die if we use this recycled plastic.</p>
 </section>
 
 <section>
@@ -170,9 +169,9 @@
     <h2>Materials Used</h2>
     <div class="materials">
         <div class="card">
-            <p>✔ Epoxy Resin</p>
-            <p>✔ Natural Wood Base</p>
-            <p>✔ High Quality LED Strip</p>
+            <p>✔ Made with love</p>
+            <p>✔ Recycled Plastic used</p>
+            <p>✔ High Quality LED lights</p>
             <p>✔ Acrylic Protective Layer</p>
         </div>
     </div>
