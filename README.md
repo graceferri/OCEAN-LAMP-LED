@@ -181,10 +181,9 @@
 <section>
     <h2>Creator Contact</h2>
     <div class="contact-box">
-        <p><strong>Name:</strong> Your Name Here</p>
-        <p><strong>Email:</strong> your@email.com</p>
-        <p><strong>Phone:</strong> +123 456 789</p>
-        <p><strong>Instagram:</strong> @yourprofile</p>
+        <p><strong>Name:</strong> Grace Elisabeth Ferri & Ekin Ilgaz</p>
+        <p><strong>Email:</strong> graceelisabethf@gmail.com & ekinilgaz11@gmail.com</p>
+        <p><strong>Instagram:</strong> grace_ferri_ & ekin.ilgazz</p>
     </div>
 </section>
 
