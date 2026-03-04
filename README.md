@@ -142,15 +142,15 @@
     <h2>Features</h2>
     <div class="features">
         <div class="card">
-            <h3>🌊 Ocean Effect</h3>
+            <h3> Ocean Effect</h3>
             <p>Realistic wave design crafted with epoxy resin.</p>
         </div>
         <div class="card">
-            <h3>💡 LED Lighting</h3>
+            <h3> LED Lighting</h3>
             <p>Energy efficient LED lights with soft ocean glow.</p>
         </div>
         <div class="card">
-            <h3>🎨 Handmade Design</h3>
+            <h3> Handmade Design</h3>
             <p>Each lamp is uniquely handcrafted with premium materials.</p>
         </div>
     </div>
