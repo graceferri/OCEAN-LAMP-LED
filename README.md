@@ -1,256 +1,195 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OCEAN LAMP</title>
+<title>OceanGlow LED Lamp</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        scroll-behavior: smooth;
+    }
 
-/* ===============================
-   COLOR VARIABLES
-=================================*/
-:root {
-  --navy: #0a192f;
-  --light-blue: #64b5f6;
-  --white: #ffffff;
-}
+    body {
+        background: linear-gradient(to bottom, #021B33, #033E6B, #0A6E8C);
+        color: white;
+    }
 
-/* ===============================
-   GLOBAL STYLING
-=================================*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
+    header {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
+        background-blend-mode: overlay;
+        background-color: rgba(0,0,0,0.6);
+        animation: fadeIn 2s ease-in-out;
+    }
 
-body {
-  background: var(--navy);
-  color: var(--white);
-  overflow-x: hidden;
-}
+    header h1 {
+        font-size: 3.5rem;
+        letter-spacing: 2px;
+    }
 
-/* ===============================
-   NAVIGATION
-=================================*/
-nav {
-  position: fixed;
-  width: 100%;
-  background: rgba(10,25,47,0.9);
-  backdrop-filter: blur(8px);
-  padding: 15px 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1000;
-}
+    header p {
+        margin-top: 20px;
+        font-size: 1.2rem;
+        max-width: 600px;
+    }
 
-nav h1 {
-  color: var(--light-blue);
-  letter-spacing: 2px;
-}
+    .btn {
+        margin-top: 30px;
+        padding: 12px 30px;
+        border: none;
+        background: #00C2D1;
+        color: #021B33;
+        font-weight: bold;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: 0.4s;
+    }
 
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 25px;
-}
+    .btn:hover {
+        background: white;
+        transform: scale(1.1);
+    }
 
-nav ul li a {
-  text-decoration: none;
-  color: var(--white);
-  transition: 0.3s;
-}
+    section {
+        padding: 80px 10%;
+        text-align: center;
+    }
 
-nav ul li a:hover {
-  color: var(--light-blue);
-}
+    h2 {
+        margin-bottom: 40px;
+        font-size: 2.5rem;
+        color: #00E0FF;
+    }
 
-/* ===============================
-   HERO SECTION
-=================================*/
-.hero {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  background: linear-gradient(135deg, var(--navy), #112240);
-}
+    .features, .materials {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+    }
 
-.hero h2 {
-  font-size: 4rem;
-  color: var(--light-blue);
-  animation: fadeIn 2s ease-in-out;
-}
+    .card {
+        background: rgba(255,255,255,0.1);
+        padding: 30px;
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+        transition: 0.4s;
+    }
 
-.hero p {
-  margin-top: 20px;
-  font-size: 1.3rem;
-  max-width: 600px;
-  animation: slideUp 2s ease-in-out;
-}
+    .card:hover {
+        transform: translateY(-10px);
+        background: rgba(255,255,255,0.2);
+    }
 
-/* ===============================
-   ABOUT SECTION
-=================================*/
-section {
-  padding: 100px 50px;
-}
+    .gallery img {
+        width: 100%;
+        border-radius: 15px;
+        transition: 0.5s;
+    }
 
-.about {
-  background: var(--white);
-  color: var(--navy);
-  border-radius: 30px 30px 0 0;
-}
+    .gallery img:hover {
+        transform: scale(1.05);
+    }
 
-.about h2 {
-  text-align: center;
-  margin-bottom: 30px;
-}
+    .contact-box {
+        background: rgba(0,0,0,0.5);
+        padding: 40px;
+        border-radius: 15px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
 
-.about p {
-  max-width: 800px;
-  margin: auto;
-  text-align: center;
-  line-height: 1.8;
-}
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #011522;
+        margin-top: 40px;
+    }
 
-/* ===============================
-   IMAGE SCROLLER
-=================================*/
-.image-slider {
-  background: var(--navy);
-  padding: 50px 0;
-  overflow: hidden;
-}
-
-.slider-track {
-  display: flex;
-  width: calc(250px * 10);
-  animation: scroll 20s linear infinite;
-}
-
-.slider-track img {
-  width: 250px;
-  height: 180px;
-  object-fit: cover;
-  margin: 0 15px;
-  border-radius: 15px;
-  transition: transform 0.3s;
-}
-
-.slider-track img:hover {
-  transform: scale(1.1);
-}
-
-/* Animation for scrolling */
-@keyframes scroll {
-  0% { transform: translateX(-50%); }
-  100% { transform: translateX(0); }
-}
-
-/* ===============================
-   FOOTER
-=================================*/
-footer {
-  background: #112240;
-  text-align: center;
-  padding: 30px;
-  color: var(--light-blue);
-}
-
-/* ===============================
-   ANIMATIONS
-=================================*/
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-@keyframes slideUp {
-  from {transform: translateY(40px); opacity: 0;}
-  to {transform: translateY(0); opacity: 1;}
-}
+    @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
 
 </style>
 </head>
-
 <body>
 
-<!-- ===============================
-     NAVIGATION
-=================================-->
-<nav>
-  <h1>OCEAN LAMP</h1>
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#gallery">Gallery</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+<header>
+    <h1>OceanGlow LED Lamp</h1>
+    <p>Bring the calm beauty of the ocean into your space with a handcrafted LED ocean lamp designed to relax and inspire.</p>
+    <button class="btn" onclick="document.getElementById('about').scrollIntoView()">Discover More</button>
+</header>
 
-<!-- ===============================
-     HERO SECTION
-=================================-->
-<div class="hero">
-  <h2>OCEAN LAMP</h2>
-  <p>Creative Developer | Designer | Innovator  
-  <!-- ✏️ EDIT THIS TEXT WITH YOUR PERSONAL INTRO -->
-  </p>
-</div>
-
-<!-- ===============================
-     ABOUT SECTION
-=================================-->
-<section id="about" class="about">
-  <h2>About Me</h2>
-   Grace and Ekin are two  MYP/IB highschoolers girls that wanted to create a fun object to use in evryday life no matter in what situation you are in. That's why they created this Ocean Lamp with LED lights in it. Grace and Ekin thanks to this lamp, discovered also their passion for the ocean and for water animals. This lamp is made of recycled plastic which helps the world, not only it's recycled but also it gives your room a cozy vibe. 
+<section id="about">
+    <h2>About The Lamp</h2>
+    <p>The OceanGlow LED Lamp recreates the peaceful waves of the ocean using layered resin art and soft LED lighting technology. Perfect for bedrooms, offices, and relaxation spaces.</p>
 </section>
 
-<!-- ===============================
-     IMAGE GALLERY (AUTO SCROLL)
-=================================-->
-<section id="gallery" class="image-slider">
-  <div class="slider-track">
-    <!-- 
-      📂 Replace image names with your own images.
-      Put your images inside the "images" folder.
-    -->
-    <img src="images/image1.jpg">
-    <img src="images/image2.jpg">
-    <img src="images/image3.jpg">
-    <img src="images/image4.jpg">
-    <img src="images/image5.jpg">
-
-    <!-- Duplicate images for seamless loop -->
-    <img src="images/image1.jpg">
-    <img src="images/image2.jpg">
-    <img src="images/image3.jpg">
-    <img src="images/image4.jpg">
-    <img src="images/image5.jpg">
-  </div>
+<section>
+    <h2>Features</h2>
+    <div class="features">
+        <div class="card">
+            <h3>🌊 Ocean Effect</h3>
+            <p>Realistic wave design crafted with epoxy resin.</p>
+        </div>
+        <div class="card">
+            <h3>💡 LED Lighting</h3>
+            <p>Energy efficient LED lights with soft ocean glow.</p>
+        </div>
+        <div class="card">
+            <h3>🎨 Handmade Design</h3>
+            <p>Each lamp is uniquely handcrafted with premium materials.</p>
+        </div>
+    </div>
 </section>
 
-<!-- ===============================
-     CONTACT SECTION
-=================================-->
-<section id="contact" class="about">
-  <h2>Contact</h2>
-  <p>
-    <!-- ✏️ EDIT WITH YOUR CONTACT INFO -->
-    Email: graceelisabethf@gmail.com & ekinilgaz11@gmail.com
-    GitHub: yourgithub
-  </p>
+<section>
+    <h2>Gallery</h2>
+    <div class="gallery features">
+        <!-- Replace these with your own images -->
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Ocean Lamp Image 1">
+        <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98" alt="Ocean Lamp Image 2">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="Ocean Lamp Image 3">
+    </div>
 </section>
 
-<!-- ===============================
-     FOOTER
-=================================-->
+<section>
+    <h2>Materials Used</h2>
+    <div class="materials">
+        <div class="card">
+            <p>✔ Epoxy Resin</p>
+            <p>✔ Natural Wood Base</p>
+            <p>✔ High Quality LED Strip</p>
+            <p>✔ Acrylic Protective Layer</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Creator Contact</h2>
+    <div class="contact-box">
+        <p><strong>Name:</strong> Your Name Here</p>
+        <p><strong>Email:</strong> your@email.com</p>
+        <p><strong>Phone:</strong> +123 456 789</p>
+        <p><strong>Instagram:</strong> @yourprofile</p>
+    </div>
+</section>
+
 <footer>
-  © 2026 OCEAN LAMP | All Rights Reserved
+    <p>© 2026 OceanGlow LED Lamp | Designed with Passion 🌊</p>
 </footer>
 
 </body>
