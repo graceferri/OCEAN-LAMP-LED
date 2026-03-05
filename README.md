@@ -4,7 +4,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>OceanGlow Lamp</title>
 
-<!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
@@ -158,7 +157,6 @@
 <section>
     <h2>Gallery</h2>
     <div class="gallery features">
-        <!-- Replace these with your own images -->
         <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Ocean Lamp Image 1">
         <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98" alt="Ocean Lamp Image 2">
         <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="Ocean Lamp Image 3">
@@ -187,5 +185,5 @@
 </section>
 
 <footer>
-    <p>© 2026 OceanGlow LED Lamp | Designed with Passion 🌊</p>
+    <p>© OceanGlow LED Lamp | Designed with Passion 🌊</p>
 </footer>
