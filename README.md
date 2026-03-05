@@ -189,6 +189,3 @@
 <footer>
     <p>© 2026 OceanGlow LED Lamp | Designed with Passion 🌊</p>
 </footer>
-
-</body>
-</html>
