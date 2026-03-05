@@ -151,6 +151,7 @@
         <div class="card">
             <h3> Handmade Design</h3>
             <p>Each lamp is uniquely handcrafted with recycled materials.</p>
+      </div>
       <div class= "card">
            <h3> Restrictions with the object</h3>
            <p>CHildren under the age of 6 can't use this product, it can give risk of hurting the children or they can break it. </p>
