@@ -128,7 +128,7 @@
 
 <header>
     <h1>OceanGlow LED Lamp</h1>
-    <p>It bring the calm beauty of the ocean into your space with a handcrafted LED ocean lamp designed to relax and inspire. You can use it in everyday life in any occasion that you are in. Wanna go to an Aquerium?? No problem buy the OceanGlow Lamp with Led lights and it will look like you are in an actaul aquerium.</p>
+    <p>It brings the calm beauty of the ocean into your space with a handcrafted LED ocean lamp designed to relax and inspire. You can use it in everyday life in any occasion that you are in. Wanna go to an Aquerium?? No problem buy the OceanGlow Lamp with Led lights and it will look like you are in an actaul aquerium.</p>
     <button class="btn" onclick="document.getElementById('about').scrollIntoView()">Discover More</button>
 </header>
 
@@ -142,15 +142,18 @@
     <div class="features">
         <div class="card">
             <h3> Ocean Effect</h3>
-            <p>Realistic wave design crafted with epoxy resin.</p>
+            <p>Realistic wave design crafted with recycled plastic that gives a more realistic effect.</p>
         </div>
         <div class="card">
             <h3> LED Lighting</h3>
-            <p>Energy efficient LED lights with soft ocean glow.</p>
+            <p>Energy efficient LED lights with any type of colours that you request, it has a switch where you can turn it on or off.</p>
         </div>
         <div class="card">
             <h3> Handmade Design</h3>
-            <p>Each lamp is uniquely handcrafted with premium materials.</p>
+            <p>Each lamp is uniquely handcrafted with recycled materials.</p>
+      <div class= "card">
+           <h3> Restrictions with the object</h3>
+           <p>CHildren under the age of 6 can't use this product, it can give risk of hurting the children or they can break it. </p>
         </div>
     </div>
 </section>
