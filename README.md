@@ -158,7 +158,7 @@
     <h2>Gallery</h2>
     <div class="gallery features">
         <img src="">
-        <img src="images/OceanLamp.png">
+        <img src="images/Oceanlamp_Assembly2_picture.png">
         <img src="images/OceanLamp2.png">
     </div>
 </section>
