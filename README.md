@@ -157,9 +157,9 @@
 <section>
     <h2>Gallery</h2>
     <div class="gallery features">
-        <img src="images/images.png">
+        <img src="">
         <img src="images/OceanLamp.png">
-        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="Ocean Lamp Image 3">
+        <img src="images/OceanLamp2.png">
     </div>
 </section>
 
